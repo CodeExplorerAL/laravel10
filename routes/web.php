@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Cache;
 use App\Models\Book;
+use App\Http\Controllers\ExampleController;
 
 
 /*
@@ -58,3 +59,5 @@ Route::get('/cache/query', function () {
     });
     return $books;
 });
+
+Route::post('/send-email', [ExampleController::class, 'sendEmail']);
