@@ -64,3 +64,8 @@ Route::post('/send-email', [ExampleController::class, 'sendEmail']);
 
 
 require __DIR__ . '/newroute.php';
+
+
+Route::get('/login', function () {
+    return '測試登入';
+});
