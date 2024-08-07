@@ -61,3 +61,6 @@ Route::get('/cache/query', function () {
 });
 
 Route::post('/send-email', [ExampleController::class, 'sendEmail']);
+
+
+require __DIR__ . '/newroute.php';
